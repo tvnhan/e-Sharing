@@ -30,6 +30,20 @@ hoặc bạn cũng có thể thay đổi bằng địa chỉ ip server của b�
 ```
 ssh -i {file_pem_name} {user_name_ec2}@{publish_DNS} [-p {port}]
 ```
-Ở đây nếu bạn không điền thông tin port thì việc kết nối sẽ thông qua port mặc định (22).
-Ví dụ:
+Ở đây nếu bạn không điền thông tin port thì việc kết nối sẽ thông qua port mặc định (22).  <br/>
+Ví dụ kết nối qua địa chỉ ip với port mặc định:
 [![https://gyazo.com/0e0cb3e8a9baf76ec2f15dde737f74da](https://i.gyazo.com/0e0cb3e8a9baf76ec2f15dde737f74da.png)](https://gyazo.com/0e0cb3e8a9baf76ec2f15dde737f74da)
+
+Như vậy tới đây là bạn đã kết nối thành công tới server. <br/>
+Bước tiếp theo, chúng ta sẽ tạo một tài khoản user mới trên server.
+
+### 2.2 Tạo thêm một tài khoản new_user 
+* Chuyển sang quyền ```root```
+Câu lệnh:
+```
+sudo su
+```
+Ví dụ: <br/>
+[![https://gyazo.com/f2be8321d21e648a844f5aa78242613c](https://i.gyazo.com/f2be8321d21e648a844f5aa78242613c.png)](https://gyazo.com/f2be8321d21e648a844f5aa78242613c)
+
+* Tạo và thêm user 
