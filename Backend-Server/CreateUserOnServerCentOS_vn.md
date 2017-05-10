@@ -137,3 +137,11 @@ Ví dụ:
 Ví dụ:
 ![](https://drive.google.com/uc?export=download&id=0B1TMTnucJTIPQ3NvUnRXWFRPZXc)
 
+## DONE
+
+Từ giờ bạn có thể connect tới server thông qua user vừa mới tạo.
+Câu lệnh:
+```
+ssh {username}@{ip}
+```
+[![https://gyazo.com/5f56c58494fb7990e02a6fe17f031145](https://i.gyazo.com/5f56c58494fb7990e02a6fe17f031145.png)](https://gyazo.com/5f56c58494fb7990e02a6fe17f031145)
