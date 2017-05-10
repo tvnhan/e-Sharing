@@ -78,10 +78,11 @@ Ví dụ:
 ### 2.3 Tiến hành kết nối ssh key
 
 #### a) Tạo ra cặp public key và private key ở client
-Để tiến hành kết nối qua ssh key, bạn cần phải tạo một cặp public key và private key, sau đó lưu lại vào trong thư mục mặc định ```~/.ssh/```.
+Để tiến hành kết nối qua ssh key, bạn cần phải tạo một cặp public key và private key, sau đó lưu lại vào trong thư mục mặc định ```~/.ssh/```. <br/>
 Ở đây, mình đã tạo ra một cặp key:
 * public key: ```~/.ssh/id_rsa.pub```
-* private key: ```~/.ssh/id_rsa```
+* private key: ```~/.ssh/id_rsa``` <br/>
+
 Nếu bạn là admin của server và muốn thêm một người vào hệ thống, bạn cần yêu cầu họ cung cấp file public key. <br/>
 Lưu ý: File private key là thông tin bí mật của bạn nên không nên chia sẻ nó với bất kỳ một người nào khác.
 
