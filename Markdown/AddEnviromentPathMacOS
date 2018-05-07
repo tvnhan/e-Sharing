@@ -1,0 +1,15 @@
+Find your shell's profile script in your user folder. If you are not sure which shell you have, run echo $SHELL.
+
+$ ls -a ~
+.  ..  .bash_logout  .bash_profile  .bashrc  Desktop  Documents  Downloads
+Bash – .bash_profile, .profile, or .bash_login.
+Zsh – .zshrc
+Tcsh – .tcshrc, .cshrc or .login.
+Add an export command to your profile script.
+
+export PATH=~/.local/bin:$PATH
+This command adds a path, ~/.local/bin in this example, to the current PATH variable.
+
+Load the profile into your current session.
+
+$ source ~/.bash_profile
