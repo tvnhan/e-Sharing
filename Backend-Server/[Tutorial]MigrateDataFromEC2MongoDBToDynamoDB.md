@@ -3,10 +3,10 @@
 #  
 
 ** Bài viết được minh hoạ trên:
-  máy client MacOS 10.11.6 
-  server VPS dịch vụ của amazon
-  MongoDB shell version: 3.2.11-3.1
-  DynamoDB dịch vụ amazon 
+ * máy client MacOS 10.11.6 
+ * server VPS dịch vụ của amazon
+ * MongoDB shell version: 3.2.11-3.1
+ * DynamoDB dịch vụ amazon 
 ## 1. Những thông tin cần phải lưu ý:
 * Trong bài viết này trong những câu lệnh, những phần được đặt trong {} thì bạn phải thay thế phù hợp với dữ liệu tương ứng của bạn.
 * Trong phần ví dụ, câu lệnh thực hiện mẫu sẽ được gạch chân bên dưới với hai màu xanh dương (blue) và xanh lá (green): <br/>
