@@ -7,15 +7,15 @@
  * server VPS dịch vụ của amazon
  * MongoDB shell version: 3.2.11-3.1
  * DynamoDB dịch vụ amazon 
-## 1. Những thông tin cần phải lưu ý:
+## Những thông tin cần phải lưu ý:
 * Trong bài viết này trong những câu lệnh, những phần được đặt trong {} thì bạn phải thay thế phù hợp với dữ liệu tương ứng của bạn.
 * Trong phần ví dụ, câu lệnh thực hiện mẫu sẽ được gạch chân bên dưới với hai màu xanh dương (blue) và xanh lá (green): <br/>
 *** xanh dương: phần cụm từ cú pháp, bạn không được phép thay đổi <br/>
 *** xanh lá cây: phần thông số bạn có thể hoặc phải thay đổi tương ứng với trường hợp của bạn
-
+## 1. Mục tiêu
+Trong ví dụ này, mình sẽ migrate data trong một collection (~35GB) có sẵn trong  MongoDB ở dịch vụ EC2 amazon sang  một table ở DynamoDB (dịch vụ amazon)
 ## 2. Các bước thực hiện
-
-### 2.1. Kết nối tới server thông qua tài khoản [user_name_ec2]
+### 2.1. Export data trong collection ra file .csv
 #### a) Lưu tập tin key .pem vào một thư mục bất kỳ trên máy
 #### b) Di chuyển đến thư mục chứa tập tin .pem thông qua câu lệnh cd
 ```
