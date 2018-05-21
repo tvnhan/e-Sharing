@@ -16,10 +16,13 @@
 Trong ví dụ này, mình sẽ migrate data trong một collection (~35GB) có sẵn trong  MongoDB ở dịch vụ EC2 amazon sang  một table ở DynamoDB (dịch vụ amazon)
 ## 2. Các bước thực hiện
 ### 2.1. Export data trong collection ra file .csv
-#### a) Lưu tập tin key .pem vào một thư mục bất kỳ trên máy
-#### b) Di chuyển đến thư mục chứa tập tin .pem thông qua câu lệnh cd
+#### a) Tạo một file txt trong đó mỗi dòng tương ứng với một field trong collection mà bạn muốn xuất ra để migrate sang DynamoDB.
+Ví dụ:
+[![https://gyazo.com/187ef1f344e9b55a2f7646f81e2a52d6](https://i.gyazo.com/187ef1f344e9b55a2f7646f81e2a52d6.png)](https://gyazo.com/187ef1f344e9b55a2f7646f81e2a52d6)
+
+#### b) Thực hiện export ra file csv
 ```
-cd {path/to/folder}
+mongoexport --db {yourdb} --collection {your_collection} --type=csv --fieldFile {path_tofiletxtx} --out {path_output_csv}
 ```
 #### c) Cấp quyền truy cập cho tập tin .pem thông qua câu lệnh
 ```
